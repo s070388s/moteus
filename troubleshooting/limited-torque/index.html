@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -29,10 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -2822,6 +2822,7 @@
 <li><strong>102 max_torque</strong>: Maximum torque: With each position mode command, the client can specify a maximum torque to use.  If the combination of the onboard PID and commanded feedforward torque exceeds this, then limiting occurs.</li>
 <li><strong>103 position_bounds</strong>: Position bounds: If the current position is outside of <code>servopos.position_min</code> and <code>servopos.position_max</code>, then torque is limited in the direction that would push the motor further outside the bounds.</li>
 <li><strong>104 flux_braking</strong>: Flux braking: The input voltage is too high and the controller is dissipating energy in the motor windings.</li>
+<li><strong>105 field_weakening</strong>: Field weakening: The motor is above its base speed, so the controller is applying negative D axis current to reach the commanded speed, which reduces the torque available.  This is configured with <code>servo.fw.enable</code> and related <code>servo.fw.*</code> parameters.</li>
 </ul>
 <h3 id="other-possibilities">Other possibilities<a class="headerlink" href="#other-possibilities" title="Permanent link">&para;</a></h3>
 <p>If none of the above limiting flags are present, then the remaining options include:</p>
@@ -2968,10 +2969,10 @@ via the fault code mechanism.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../javascripts/iv-viewer.min.js"></script>
       
